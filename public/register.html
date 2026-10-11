@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Join Us - Monterey Sea Otters</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <a href="index.html">
+                <img src="images/so-title.jpg" alt="A sea otter swimming in Monterey Bay looks at the camera" class="logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                        <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Sea Otters</a></li>
+                        <li><a href="register.html">Join Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">External Links</a>
+                        <ul class="dropdown">
+                        <li><a href="https://en.wikipedia.org/wiki/Sea_otter" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://www.worldwildlife.org/species/sea-otter" target="_blank">WWF</a></li>
+                        <li><a href="https://www.montereybayaquarium.org/animals/animals-a-to-z/sea-otter" target="_blank">Monterey Bay Aquarium</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <h1>Join Us</h1>
+
+            <section class="form-section">
+                <p>Join the Monterey sea otter conservation community.</p>
+
+                <form action="/register" method="POST" class="register-form">
+                    
+                    <div class="form-field">
+                        <label for="name">Full Name <span class="required">(Required)</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address <span class="required">(Required)</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="source">How did you hear about us?</label>
+                        <select id="source" name="source">
+                            <option value="">-- Please select --</option>
+                            <option value="aquarium">Monterey Bay Aquarium</option>
+                            <option value="social">Social Media</option>
+                            <option value="friend">Friend or Family</option>
+                            <option value="search">Online Search</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form-field">
+                        <legend>I am interested in:</legend>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-volunteer" name="interests" value="volunteer">
+                            <label for="interest-volunteer">Volunteer Opportunities</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-donate" name="interests" value="donate">
+                            <label for="interest-donate">Donation Programs</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-news" name="interests" value="news">
+                            <label for="interest-news">Newsletter Updates</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-field">
+                        <button type="submit">Join Our Community</button>
+                    </div>
+
+
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Monterey Sea Otters. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </footer>
+    </body>
+</html>
